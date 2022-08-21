@@ -1,0 +1,5 @@
+export enum FILTER_ITEMS {
+  ALL = "ALL",
+  COMPLETED = "COMPLETED",
+  NOT_COMPLETED = "NOT COMPLETED",
+}

@@ -1,0 +1,14 @@
+@use "./variables";
+@use "./mixins";
+
+.todos {
+  height: variables.$todos-height;
+
+  &--overflow {
+    overflow-y: scroll;
+  }
+
+  @include mixins.Mobile {
+    height: variables.$todos-mobile-height;
+  }
+}

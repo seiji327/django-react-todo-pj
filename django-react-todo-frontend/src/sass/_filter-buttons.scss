@@ -1,0 +1,14 @@
+@use "./variables";
+@use "./mixins";
+
+.filter-buttons {
+  height: variables.$filter-buttons-height;
+
+  #{&}__filter-button {
+    min-width: 80%;
+  }
+
+  @include mixins.Mobile {
+    height: variables.$filter-buttons-mobile-height;
+  }
+}

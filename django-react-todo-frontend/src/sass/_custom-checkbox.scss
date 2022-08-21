@@ -1,0 +1,26 @@
+@use "./variables";
+
+.custom-checkbox {
+  cursor: pointer;
+
+  #{&}__checkbox {
+    /* removing default appearance */
+    appearance: none;
+    border-radius: 0.15em;
+    border: 0.15em solid variables.$checkbox-color;
+    cursor: pointer;
+    height: auto;
+    margin-right: 0.5em;
+    min-width: 1.6em;
+    outline: none;
+
+    &--checked {
+      background-color: variables.$checkbox-color;
+    }
+
+    &--checked::before {
+      color: #fff;
+      content: "\2714";
+    }
+  }
+}

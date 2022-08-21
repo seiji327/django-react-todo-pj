@@ -1,0 +1,13 @@
+// HEIGHT
+$app-height: 100vh;
+$header-height: 10vh;
+$filter-buttons-height: 10vh;
+$todos-height: $app-height - $header-height - $filter-buttons-height;
+
+// HEIGHT FOR MOBILE
+$filter-buttons-mobile-height: 25vh;
+$todos-mobile-height: $app-height - $header-height -
+  $filter-buttons-mobile-height;
+
+$mobile: 767px;
+$checkbox-color: #7ab3b4;
